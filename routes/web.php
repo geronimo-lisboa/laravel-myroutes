@@ -13,5 +13,5 @@
 
 Route::get('/', function () {
     View::addExtension('html','php');
-    return view('teste');
+    return view('index');
 });
