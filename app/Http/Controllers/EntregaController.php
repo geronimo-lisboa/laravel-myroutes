@@ -19,7 +19,7 @@ class EntregaController extends Controller
      * */
     public function show($id)
     {
-        return Entrega::find($id);
+        return Entrega::findOrFail($id);
     }
     /*
      * Cria uma nova entrega.
