@@ -13,11 +13,17 @@ class EntregaEndpointTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testCanSave()
     {
-
         $payload = ['cliente'=>'foo', 'origem'=>'bar', 'destino'=>'woo'];
         $this->json('POST', '/api/entregas', $payload)
             ->assertStatus(201);
     }
+
+    public function testCanGet()
+    {
+        $this->json('GET', '/api/entregas/1')
+            ->assertStatus(200);
+    }
+
 }
