@@ -15,7 +15,6 @@ class EntregaEndpointTest extends TestCase
      */
     public function testCanSave()
     {
-        $this->withoutMiddleware();
         $payload = ['cliente'=>'foo', 'origem'=>'bar', 'destino'=>'woo'];
         $this->json('POST', '/api/entregas', $payload)
             ->assertStatus(201);

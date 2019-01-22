@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61095185-a354-44ec-b312-010cdb21c0fc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Cors.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/EntregaEndpointTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/EntregaEndpointTest.php" afterDir="false" />
     </list>
@@ -20,7 +21,16 @@
         <entry file="file://$PROJECT_DIR$/tests/Feature/EntregaEndpointTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -28,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Cors.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="323">
+              <caret line="19" column="88" selection-start-line="19" selection-start-column="88" selection-end-line="19" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -58,7 +68,6 @@
       <list>
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/teste.html" />
-        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/resources/frontend/copyFilesAfterBuildWindows.bat" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
@@ -81,6 +90,7 @@
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/database/seeds/EntregasTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/Cors.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/tests/Feature/EntregaEndpointTest.php" />
       </list>
     </option>
@@ -221,6 +231,12 @@
             <path>
               <item name="myRouter" type="b2602c69:ProjectViewProjectNode" />
               <item name="myRouter" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myRouter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myRouter" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -318,7 +334,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14678000" />
+    <option name="totallyTimeSpent" value="15104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1616" height="876" extended-state="6" />
@@ -395,13 +411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="25" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" selection-start-line="15" selection-end-line="22" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -564,15 +573,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Cors.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="323">
+          <caret line="19" column="88" selection-start-line="19" selection-start-column="88" selection-end-line="19" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/EntregaEndpointTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
