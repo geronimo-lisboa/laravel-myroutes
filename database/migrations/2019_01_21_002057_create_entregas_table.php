@@ -18,7 +18,10 @@ class CreateEntregasTable extends Migration
             $table->string('cliente');
             $table->string('origem');
             $table->string('destino');
-            $table->timestamp('data_entrega')->nullable(true);//Data de entrega pode ser nula, ainda n entregou.
+            //Data de entrega pode ser nula, ainda n entregou.
+            //Trabalhar com os formatos de data do php estava mto dificil e dando mtos erros nos testes por diferenças
+            //de formatos e presença ou não de milisegundos. Vou gravar a representação textual da data.
+            $table->string('data_entrega')->nullable(true);
             $table->timestamps();
         });
     }

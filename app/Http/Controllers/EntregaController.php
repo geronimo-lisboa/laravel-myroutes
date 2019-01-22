@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Exceptions\NotEnoughParametersException;
+use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use App\Entrega;
+use mysql_xdevapi\Exception;
 
 class EntregaController extends Controller
 {
@@ -26,34 +29,50 @@ class EntregaController extends Controller
      * */
     public function store(Request $request)
     {
-        $cliente = $request->request->get('cliente');
-        $origem =  $request->request->get('origem');
-        $destino = $request->request->get('destino');
-        $data_entrega = $request->request->get('data_entrega');
-        return Entrega::create([
-            'cliente'=>$cliente,
-            'origem'=>$origem,
-            'destino'=>$destino,
-            'data_entrega'=>$data_entrega,
+        try{
+            $cliente = $request->request->get('cliente');
+            $origem =  $request->request->get('origem');
+            $destino = $request->request->get('destino');
+            $data_entrega = $request->request->get('data_entrega');
+            return Entrega::create([
+                'cliente'=>$cliente,
+                'origem'=>$origem,
+                'destino'=>$destino,
+                'data_entrega'=>$data_entrega,
             ]);
+        }
+        catch (QueryException $exception)
+        {
+            throw new NotEnoughParametersException();
+        }
     }
     /*
      * Atualiza uma entrega.
      * */
     public function update(Request $request, $id)
     {
-        $cliente = $request->request->get('cliente');
-        $origem =  $request->request->get('origem');
-        $destino = $request->request->get('destino');
-        $data_entrega = $request->request->get('data_entrega');
+        try
+        {
+            $cliente = $request->request->get('cliente');
+            $origem =  $request->request->get('origem');
+            $destino = $request->request->get('destino');
 
-        $entrega = Entrega::findOrFail($id);
-        $entrega->cliente = $cliente;
-        $entrega->origem = $origem;
-        $entrega->destino = $destino;
-        $entrega->data_entrega = $data_entrega;
 
-        $entrega->update();
-        return $entrega;
+            $data_entrega = $request->request->get('data_entrega');
+            $entrega = Entrega::findOrFail($id);
+            $entrega->cliente = $cliente;
+            $entrega->origem = $origem;
+            $entrega->destino = $destino;
+            $entrega->data_entrega = $data_entrega;
+            $entrega->update();
+
+            // var_dump($entrega);
+            return $entrega;
+
+        }
+        catch (QueryException $exception)
+        {
+            throw new NotEnoughParametersException();
+        }
     }
 }

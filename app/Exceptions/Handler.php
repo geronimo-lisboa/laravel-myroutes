@@ -53,6 +53,12 @@ class Handler extends ExceptionHandler
                 'error'=>'Entrega não encontrada'
             ], 404);
         }
+        if($exception instanceof NotEnoughParametersException)
+        {
+            return response()->json([
+                'error'=>'Tem que informar origem, destino e cliente'
+            ], 400);
+        }
         return parent::render($request, $exception);
     }
 }
