@@ -35,6 +35,7 @@ class EntregaTest extends TestCase
 
     public function testDeleteEntrega()
     {
+        //fwrite(STDOUT, "foobar?");
         $faker = \Faker\Factory::create();
         $name = $faker->name;
         $entrega = Entrega::create([
