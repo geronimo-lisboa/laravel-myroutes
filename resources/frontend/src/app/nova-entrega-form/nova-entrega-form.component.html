@@ -1,7 +1,7 @@
 <div>
-  <input (change)="onNewEntregaClientEdit()" placeholder="Cliente">
-  <input (change)="onNewEntregaOrigemEdit()" placeholder="End. de origem">
-  <input (change)="onNewEntregaDestinoEdit()" placeholder="End. de destino">
-  <input (change)="onNewEntregaDataEntregaEdit()" placeholder="Data da entrega">
+  <input (change)="onNewEntregaClientEdit($event)" placeholder="Cliente">
+  <input (change)="onNewEntregaOrigemEdit($event)" placeholder="End. de origem">
+  <input (change)="onNewEntregaDestinoEdit($event)" placeholder="End. de destino">
+  <input (change)="onNewEntregaDataEntregaEdit($event)" placeholder="Data da entrega">
   <button (click)="onNewEntregaClick()">Salvar</button>
 </div>

@@ -22,6 +22,6 @@ export class Entrega {
         if(this.destino == null || this.destino.length==0){
             return false;
         }
-
+        return true;
     }
 }
