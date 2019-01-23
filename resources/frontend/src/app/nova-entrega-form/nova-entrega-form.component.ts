@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Entrega} from "../model/Entrega";
 import {ServerCommunication} from "../infra/ServerCommunication";
+import {Entregas} from "../viewModel/Entregas";
 
 @Component({
   selector: 'app-nova-entrega-form',
@@ -15,12 +16,16 @@ export class NovaEntregaFormComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
 
   onNewEntregaClick() {
     let entrega:Entrega = new Entrega(this.strCliente, this.strOrigem, this.strDestino, this.strData);
     if(entrega.isValid()){
-      this.serverInterface.addEntrega(entrega);
+      this.serverInterface.addEntrega(entrega)
+          .then(json=>{
+            Entregas.addCreatedEntrega(entrega);
+          });
     }
   }
 
