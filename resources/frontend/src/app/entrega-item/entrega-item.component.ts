@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input} from '@angular/core';
+import {Entrega} from "../model/Entrega";
 
 @Component({
   selector: 'app-entrega-item',
@@ -10,6 +11,8 @@ export class EntregaItemComponent implements OnInit {
   origem:string;
   destino:string;
   data_entrega:string;
+  @Input() entrega:Entrega;
+
   constructor() {
     this.cliente = 'foobar';
     this.origem = 'blablabla';

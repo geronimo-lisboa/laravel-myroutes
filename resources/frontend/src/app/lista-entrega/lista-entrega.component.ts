@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-lista-entrega',
@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lista-entrega.component.css']
 })
 export class ListaEntregaComponent implements OnInit {
-  entregas: string[];
+  @Input() entregas: string[];
   constructor() {
-    this.entregas = ['','','', ''];
+    this.entregas = [];
   }
 
   ngOnInit() {
