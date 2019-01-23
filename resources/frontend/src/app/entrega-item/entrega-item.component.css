@@ -1,0 +1,10 @@
+.entrega-item {
+    display: flex;
+    flex-direction: row;
+    background: #64d5ca;
+}
+.entrega-item-dado
+{
+    width: 25%;
+}
+

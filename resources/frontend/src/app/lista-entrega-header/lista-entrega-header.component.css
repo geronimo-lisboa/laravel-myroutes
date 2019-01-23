@@ -1,0 +1,10 @@
+.lista-entrega-header {
+    display: flex;
+    flex-direction: row;
+    background: #4c110f;
+    color: #64d5ca;
+}
+.lista-entrega-header-coluna
+{
+    width: 25%;
+}
