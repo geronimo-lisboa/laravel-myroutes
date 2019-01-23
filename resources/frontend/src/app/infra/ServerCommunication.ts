@@ -7,6 +7,7 @@ export class ServerCommunication {
                 return response.json();
             })
     }
+
     addEntrega():void{
         console.log("nao implementado");
     }

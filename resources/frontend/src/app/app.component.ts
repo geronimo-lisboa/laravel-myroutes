@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ServerCommunication} from "./infra/ServerCommunication";
 import {Entrega} from "./model/Entrega";
+import Any = jasmine.Any;
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,21 @@ export class AppComponent {
             return new Entrega(curr.cliente, curr.origem, curr.destino, curr.data_entrega);
           });
           this.entregas = listOfEntregas;
-          console.log("puxou. renderizou?");
         });
+
+    //depois da 1a invocação é uma boa consultar ocasionalmente pra ver se a lista está atualizada.
+    setInterval(()=>{this.updateData();}, 5000);
+
+  }
+
+  updateData(){
+      this.serverInterface.getAllEntregas()
+          .then( listaDeJsonDeEntregas =>
+          {
+              let listOfEntregas = listaDeJsonDeEntregas.map(curr=>{
+                  return new Entrega(curr.cliente, curr.origem, curr.destino, curr.data_entrega);
+              });
+              this.entregas = listOfEntregas;
+          });
   }
 }
