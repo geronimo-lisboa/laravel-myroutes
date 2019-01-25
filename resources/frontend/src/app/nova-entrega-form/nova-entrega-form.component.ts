@@ -9,7 +9,10 @@ import {Entregas} from "../viewModel/Entregas";
   styleUrls: ['./nova-entrega-form.component.css']
 })
 export class NovaEntregaFormComponent implements OnInit {
-  strCliente, strOrigem, strDestino, strData: string;
+  strCliente:string;
+  strOrigem:string;
+  strDestino:string;
+  strData: string;
   serverInterface:ServerCommunication;
   constructor() {
     this.serverInterface = new ServerCommunication();
