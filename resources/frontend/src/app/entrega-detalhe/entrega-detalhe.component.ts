@@ -7,7 +7,7 @@ import {Entrega} from "../model/Entrega";
   styleUrls: ['./entrega-detalhe.component.css']
 })
 export class EntregaDetalheComponent implements OnInit {
-  @Input() entrega:Entrega;
+
   constructor() { }
 
   ngOnInit() {

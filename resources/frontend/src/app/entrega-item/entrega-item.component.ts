@@ -1,5 +1,6 @@
 import { Component, OnInit , Input} from '@angular/core';
 import {Entrega} from "../model/Entrega";
+import {Entregas} from "../viewModel/Entregas";
 
 @Component({
   selector: 'app-entrega-item',
@@ -11,6 +12,7 @@ export class EntregaItemComponent implements OnInit {
   origem:string;
   destino:string;
   data_entrega:string;
+
   @Input() entrega:Entrega;
   showDetails: boolean;
 
@@ -27,6 +29,6 @@ export class EntregaItemComponent implements OnInit {
   }
 
   onEntregaDetalheClick() {
-    this.showDetails = !this.showDetails;
+    Entregas.setCurrentEntrega(this.entrega);
   }
 }

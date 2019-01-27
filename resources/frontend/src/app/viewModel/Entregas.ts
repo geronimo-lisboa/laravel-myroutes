@@ -3,6 +3,15 @@ import {Entrega} from "../model/Entrega";
 export class Entregas {
     static instance: Entregas = null;
     entregas : Entrega[] = [];
+    selectedEntrega : Entrega;
+
+    private constructor(){
+        this.selectedEntrega = null;
+    }
+
+    static setCurrentEntrega(e:Entrega){
+        this.instance.selectedEntrega = e;
+    }
 
     private static instantiationGuard(){
         if(this.instance == null){

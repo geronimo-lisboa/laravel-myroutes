@@ -2,4 +2,5 @@
 <div style="text-align:center">
   <app-nova-entrega-form></app-nova-entrega-form>
   <app-lista-entrega [entregas]="entregas.entregas"></app-lista-entrega>
+  <app-entrega-detalhe *ngIf="entregas.selectedEntrega!=null"></app-entrega-detalhe>
 </div>
