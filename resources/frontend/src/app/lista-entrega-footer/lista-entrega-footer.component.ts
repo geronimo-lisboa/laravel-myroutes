@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ServerCommunication} from "../infra/ServerCommunication";
 
 @Component({
   selector: 'app-lista-entrega-footer',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lista-entrega-footer.component.css']
 })
 export class ListaEntregaFooterComponent implements OnInit {
-
-  constructor() { }
+  testeComm:ServerCommunication;
+  constructor() {
+    this.testeComm = new ServerCommunication();
+  }
 
   ngOnInit() {
   }
 
+  OnTesteApiClick() {
+    this.testeComm.testeRouteApi()
+        .then( json =>{
+          console.log("e ai? rolou?");
+        });
+  }
 }
