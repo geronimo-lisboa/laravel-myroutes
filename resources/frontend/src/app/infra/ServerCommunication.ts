@@ -4,7 +4,7 @@ import {post} from "selenium-webdriver/http";
 export class ServerCommunication {
     ///Retorna a lista de jsons de entregas
     getAllEntregas():Promise<any>{
-        return fetch('http://localhost:8000/api/entregas')
+        return fetch('/api/entregas')
             .then(function (response) {
                // console.log(response);
                 return response.json();
@@ -12,7 +12,7 @@ export class ServerCommunication {
     }
 
     testeRouteApi():Promise<any>{
-        return fetch('http://localhost:8000/api/testeRoutes')
+        return fetch('/api/testeRoutes')
             .then(function (response) {
                 return response.text();
                 //return response;
@@ -27,7 +27,7 @@ export class ServerCommunication {
         if(!(entrega.data_entrega == undefined || entrega.data_entrega == null || entrega.data_entrega=="")){
             postData.append('data_entrega', entrega.data_entrega);
         }
-        return fetch('http://localhost:8000/api/entregas',{
+        return fetch('/api/entregas',{
             method:'post',
             body:postData})
             .then(function (response) {
@@ -40,8 +40,8 @@ export class ServerCommunication {
 
     getRoute(entrega: Entrega):Promise<any> {
         console.log( entrega.destino.length );
-        //return fetch('http://localhost:8000/api/rota?origem/'+entrega.origem)//+'&destino='+entrega.destino)
-        return fetch('http://localhost:8000/api/rota/origem='+entrega.origem+'&destino='+entrega.destino )
+
+        return fetch('/api/rota/origem='+entrega.origem+'&destino='+entrega.destino )
             .then(function (response) {
                 return response.text();
             });
