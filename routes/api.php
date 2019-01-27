@@ -19,3 +19,5 @@ Route::post('entregas', 'EntregaController@store');
 Route::put('entregas/{id}', 'EntregaController@update');
 
 Route::get('testeRoutes', 'TesteRouteApiController@helloRouteApi');
+
+Route::get('rota/origem={origem}&destino={destino}', 'RotaController@calculate');

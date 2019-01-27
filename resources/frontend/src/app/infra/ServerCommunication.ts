@@ -1,4 +1,5 @@
 import {Entrega} from "../model/Entrega";
+import {post} from "selenium-webdriver/http";
 
 export class ServerCommunication {
     ///Retorna a lista de jsons de entregas
@@ -35,5 +36,14 @@ export class ServerCommunication {
     }
     updateEntrega():void{
         console.log("nao implementado");
+    }
+
+    getRoute(entrega: Entrega):Promise<any> {
+        console.log( entrega.destino.length );
+        //return fetch('http://localhost:8000/api/rota?origem/'+entrega.origem)//+'&destino='+entrega.destino)
+        return fetch('http://localhost:8000/api/rota/origem='+entrega.origem+'&destino='+entrega.destino )
+            .then(function (response) {
+                return response.text();
+            });
     }
 }

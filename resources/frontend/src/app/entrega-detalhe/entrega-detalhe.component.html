@@ -1,4 +1,7 @@
 <div>
-  <div><button>Calcular Rota</button> </div>
+  <div><span>Cliente</span><span>{{entrega.cliente}}</span></div>
+  <div><span>Origem</span><span>{{entrega.origem}}</span></div>
+  <div><span>Destino</span><span>{{entrega.destino}}</span></div>
+  <div><button (click)="onCalcularRotaClick()">Calcular Rota</button> </div>
   <div><button>Entregue!</button> </div>
 </div>
