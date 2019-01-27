@@ -5,7 +5,7 @@ export class ServerCommunication {
     getAllEntregas():Promise<any>{
         return fetch('http://localhost:8000/api/entregas')
             .then(function (response) {
-                console.log(response);
+               // console.log(response);
                 return response.json();
             })
     }
@@ -13,8 +13,8 @@ export class ServerCommunication {
     testeRouteApi():Promise<any>{
         return fetch('http://localhost:8000/api/testeRoutes')
             .then(function (response) {
-                console.log(response);
-                return response.json();
+                return response.text();
+                //return response;
             })
     }
 

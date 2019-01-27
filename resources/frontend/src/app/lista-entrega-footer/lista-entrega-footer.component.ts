@@ -17,8 +17,8 @@ export class ListaEntregaFooterComponent implements OnInit {
 
   OnTesteApiClick() {
     this.testeComm.testeRouteApi()
-        .then( json =>{
-          console.log("e ai? rolou?");
+        .then( resp =>{
+          console.log(resp);
         });
   }
 }
