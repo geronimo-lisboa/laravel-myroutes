@@ -3,4 +3,8 @@
   <div class="entrega-item-dado">{{entrega.origem}}</div>
   <div class="entrega-item-dado">{{entrega.destino}}</div>
   <div class="entrega-item-dado">{{entrega.data_entrega}}</div>
+  <div class="entrega-item-dado"><button (click)="onEntregaDetalheClick()">Detalhes</button></div>
+</div>
+<div *ngIf="showDetails">
+  <app-entrega-detalhe [entrega]="entrega"></app-entrega-detalhe>
 </div>

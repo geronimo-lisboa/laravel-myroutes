@@ -8,6 +8,7 @@ import { ListaEntregaComponent } from './lista-entrega/lista-entrega.component';
 import { ListaEntregaHeaderComponent } from './lista-entrega-header/lista-entrega-header.component';
 import { ListaEntregaFooterComponent } from './lista-entrega-footer/lista-entrega-footer.component';
 import { NovaEntregaFormComponent } from './nova-entrega-form/nova-entrega-form.component';
+import { EntregaDetalheComponent } from './entrega-detalhe/entrega-detalhe.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NovaEntregaFormComponent } from './nova-entrega-form/nova-entrega-form.
     ListaEntregaComponent,
     ListaEntregaHeaderComponent,
     ListaEntregaFooterComponent,
-    NovaEntregaFormComponent
+    NovaEntregaFormComponent,
+    EntregaDetalheComponent
   ],
   imports: [
     BrowserModule,FormsModule, ReactiveFormsModule

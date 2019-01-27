@@ -12,16 +12,21 @@ export class EntregaItemComponent implements OnInit {
   destino:string;
   data_entrega:string;
   @Input() entrega:Entrega;
+  showDetails: boolean;
 
   constructor() {
     this.cliente = 'foobar';
     this.origem = 'blablabla';
     this.destino = 'loren ipsun';
     this.data_entrega = '13/04/2018 15:00'
+    this.showDetails = false;
   }
 
 
   ngOnInit() {
   }
 
+  onEntregaDetalheClick() {
+    this.showDetails = !this.showDetails;
+  }
 }
