@@ -4,7 +4,7 @@ import {post} from "selenium-webdriver/http";
 export class ServerCommunication {
     prefix:string;
     constructor(){
-        this.prefix = ''; //http://localhost:8000
+        this.prefix = 'http://localhost:8000';
     }
     ///Retorna a lista de jsons de entregas
     getAllEntregas():Promise<any>{
