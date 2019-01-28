@@ -1,7 +1,40 @@
-<div>
-  <div><span>Cliente</span><span>{{entrega.cliente}}</span></div>
-  <div><span>Origem</span><span>{{entrega.origem}}</span></div>
-  <div><span>Destino</span><span>{{entrega.destino}}</span></div>
-  <div><button (click)="onCalcularRotaClick()">Calcular Rota</button> </div>
-  <div><button>Entregue!</button> </div>
+<div class="modal fade" id="entregaDetailModal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title">
+          Entrega
+        </div>
+      </div>
+      <div class="modal-body">
+        <div>
+          <label>Cliente:</label>
+          <span *ngIf="entrega!=null">{{entrega.cliente}}</span>
+        </div>
+        <div>
+          <label>Origem:</label>
+          <span *ngIf="entrega!=null">{{entrega.origem}}</span>
+        </div>
+        <div>
+          <label>Destino:</label>
+          <span *ngIf="entrega!=null">{{entrega.destino}}</span>
+        </div>
+        <div>
+          <label>Data de entrega:</label>
+          <span *ngIf="entrega!=null">{{entrega.data_entrega}}</span>
+        </div>
+        <div>
+          <button class="btn btn-primary" (click)="onCalcularRotaClick()">Calcular Rota</button>
+        </div>
+        <div>
+          <button class="btn btn-success">Entregue!</button>
+        </div>
+        <app-route-steps *ngIf="stepList != null" [steps]="stepList"></app-route-steps>
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+
 </div>

@@ -9,6 +9,8 @@ import { ListaEntregaHeaderComponent } from './lista-entrega-header/lista-entreg
 import { ListaEntregaFooterComponent } from './lista-entrega-footer/lista-entrega-footer.component';
 import { NovaEntregaFormComponent } from './nova-entrega-form/nova-entrega-form.component';
 import { EntregaDetalheComponent } from './entrega-detalhe/entrega-detalhe.component';
+import { RouteStepItemComponent } from './route-step-item/route-step-item.component';
+import { RouteStepsComponent } from './route-steps/route-steps.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { EntregaDetalheComponent } from './entrega-detalhe/entrega-detalhe.compo
     ListaEntregaHeaderComponent,
     ListaEntregaFooterComponent,
     NovaEntregaFormComponent,
-    EntregaDetalheComponent
+    EntregaDetalheComponent,
+    RouteStepItemComponent,
+    RouteStepsComponent
   ],
   imports: [
     BrowserModule,FormsModule, ReactiveFormsModule

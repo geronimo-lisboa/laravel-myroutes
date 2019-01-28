@@ -47,7 +47,7 @@ export class ServerCommunication {
 
         return fetch(this.prefix+'/api/rota/origem='+entrega.origem+'&destino='+entrega.destino )
             .then(function (response) {
-                return response.text();
+                return response.json();
             });
     }
 }
