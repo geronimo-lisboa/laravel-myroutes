@@ -1,7 +1,8 @@
-<div class="entrega-item">
-  <div class="entrega-item-dado">{{entrega.cliente}}</div>
-  <div class="entrega-item-dado">{{entrega.origem}}</div>
-  <div class="entrega-item-dado">{{entrega.destino}}</div>
-  <div class="entrega-item-dado">{{entrega.data_entrega}}</div>
-  <div class="entrega-item-dado"><button (click)="onEntregaDetalheClick()">Detalhes</button></div>
-</div>
+<li class="list-group-item">
+  <div> <label>Cliente:</label> {{entrega.cliente}}</div>
+  <div> <label>Origem:</label> {{entrega.origem}}</div>
+  <div> <label>Destino:</label>{{entrega.destino}}</div>
+  <div> <label>Entrega:</label>{{entrega.data_entrega}}</div>
+  <div> <button class="btn btn-primary"(click)="onEntregaDetalheClick()">Detalhes</button></div>
+
+</li>
