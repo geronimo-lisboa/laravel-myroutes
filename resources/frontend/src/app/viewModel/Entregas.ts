@@ -5,6 +5,7 @@ export class Entregas {
     entregas : Entrega[] = [];
     selectedEntrega : Entrega;
 
+
     private constructor(){
         this.selectedEntrega = null;
     }
@@ -32,4 +33,5 @@ export class Entregas {
         this.instantiationGuard();
         this.instance.entregas.push(entrega);
     }
+
 }

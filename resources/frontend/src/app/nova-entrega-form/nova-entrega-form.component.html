@@ -1,7 +1,15 @@
-<div>
-  <input (change)="onNewEntregaClientEdit($event)" placeholder="Cliente">
-  <input (change)="onNewEntregaOrigemEdit($event)" placeholder="End. de origem">
-  <input (change)="onNewEntregaDestinoEdit($event)" placeholder="End. de destino">
-  <input (change)="onNewEntregaDataEntregaEdit($event)" placeholder="Data da entrega">
-  <button (click)="onNewEntregaClick()">Salvar</button>
+<button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">open</button>
+
+<div class="modal fade" id="exampleModal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <input (change)="onNewEntregaClientEdit($event)" placeholder="Cliente">
+        <input (change)="onNewEntregaOrigemEdit($event)" placeholder="End. de origem">
+        <input (change)="onNewEntregaDestinoEdit($event)" placeholder="End. de destino">
+        <input (change)="onNewEntregaDataEntregaEdit($event)" placeholder="Data da entrega">
+        <button (click)="onNewEntregaClick()">Salvar</button>
+      </div>
+    </div>
+  </div>
 </div>

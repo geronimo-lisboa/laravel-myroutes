@@ -14,6 +14,7 @@ export class AppComponent {
   serverInterface:ServerCommunication;
   title = 'MyRouter';
   entregas = Entregas.getInstance();
+
   constructor() {
     this.serverInterface = new ServerCommunication();
   }
@@ -45,4 +46,6 @@ export class AppComponent {
               //this.entregas = listOfEntregas;
           });
   }
+
+    
 }
