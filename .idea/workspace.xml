@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61095185-a354-44ec-b312-010cdb21c0fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/entrega-item/entrega-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/entrega-item/entrega-item.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/nova-entrega-form/nova-entrega-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/nova-entrega-form/nova-entrega-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/viewModel/Entregas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/viewModel/Entregas.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/app.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="556">
-              <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -43,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/nova-entrega-form/nova-entrega-form.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -137,10 +134,10 @@
         <option value="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega/lista-entrega.component.html" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/entrega-item/entrega-item.component.html" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/nova-entrega-form/nova-entrega-form.component.css" />
-        <option value="$PROJECT_DIR$/resources/frontend/src/app/nova-entrega-form/nova-entrega-form.component.html" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/viewModel/Entregas.ts" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/resources/frontend/src/app/nova-entrega-form/nova-entrega-form.component.html" />
       </list>
     </option>
   </component>
@@ -394,7 +391,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70622000" />
+    <option name="totallyTimeSpent" value="71078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -794,13 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/nova-entrega-form/nova-entrega-form.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/nova-entrega-form/nova-entrega-form.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -821,10 +811,17 @@
     <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
-          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/nova-entrega-form/nova-entrega-form.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>

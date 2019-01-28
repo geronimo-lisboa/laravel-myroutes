@@ -1,14 +1,22 @@
-<button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">open</button>
+<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">open</button>
 
 <div class="modal fade" id="exampleModal" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-body">
-        <input (change)="onNewEntregaClientEdit($event)" placeholder="Cliente">
-        <input (change)="onNewEntregaOrigemEdit($event)" placeholder="End. de origem">
-        <input (change)="onNewEntregaDestinoEdit($event)" placeholder="End. de destino">
-        <input (change)="onNewEntregaDataEntregaEdit($event)" placeholder="Data da entrega">
-        <button (click)="onNewEntregaClick()">Salvar</button>
+      <div class="modal-header">
+        <div class="modal-title">
+          Nova Entrega
+        </div>
+      </div>
+      <div class="modal-body form-group">
+        <input class="form-control" (change)="onNewEntregaClientEdit($event)" placeholder="Cliente">
+        <input class="form-control" (change)="onNewEntregaOrigemEdit($event)" placeholder="End. de origem">
+        <input class="form-control" (change)="onNewEntregaDestinoEdit($event)" placeholder="End. de destino">
+        <input class="form-control"(change)="onNewEntregaDataEntregaEdit($event)" placeholder="Data da entrega">
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" (click)="onNewEntregaClick()">Salvar</button>
+        <button class="btn btn-secondary" data-dismiss="modal">Cancelar </button>
       </div>
     </div>
   </div>
