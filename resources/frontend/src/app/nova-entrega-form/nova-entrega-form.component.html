@@ -1,4 +1,4 @@
-<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">open</button>
+<button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Nova Entrega</button>
 
 <div class="modal fade" id="exampleModal" role="dialog">
   <div class="modal-dialog" role="document">
@@ -15,7 +15,7 @@
         <input class="form-control"(change)="onNewEntregaDataEntregaEdit($event)" placeholder="Data da entrega">
       </div>
       <div class="modal-footer">
-        <button class="btn btn-primary" (click)="onNewEntregaClick()">Salvar</button>
+        <button class="btn btn-primary"  data-dismiss="modal" (click)="onNewEntregaClick()">Salvar</button>
         <button class="btn btn-secondary" data-dismiss="modal">Cancelar </button>
       </div>
     </div>

@@ -2,6 +2,7 @@ import { Component, OnInit , Input} from '@angular/core';
 import {Entrega} from "../model/Entrega";
 import {RouteStep} from "../model/RouteStep";
 import {ServerCommunication} from "../infra/ServerCommunication";
+import {Entregas} from "../viewModel/Entregas";
 
 
 @Component({
@@ -11,10 +12,11 @@ import {ServerCommunication} from "../infra/ServerCommunication";
 })
 export class EntregaDetalheComponent implements OnInit {
   server:ServerCommunication;
-  stepList:RouteStep[];
+  entregaVM:Entregas;
   @Input() entrega:Entrega;
   constructor() {
     this.server = new ServerCommunication();
+    this.entregaVM = Entregas.getInstance();
   }
 
   ngOnInit() {
@@ -27,8 +29,7 @@ export class EntregaDetalheComponent implements OnInit {
           let steps = jsonStepsList.map(
               (json)=>new RouteStep(json.html_instructions, json.distance, json.duration)
           );
-          this.stepList = steps;
-          //console.log(jsonData);
+          Entregas.setCurrentRoute(steps);
         });
   }
 }

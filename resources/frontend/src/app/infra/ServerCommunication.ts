@@ -4,7 +4,7 @@ import {post} from "selenium-webdriver/http";
 export class ServerCommunication {
     prefix:string;
     constructor(){
-        this.prefix = '';//http://localhost:8000';
+        this.prefix = '';//'http://localhost:8000';
     }
     ///Retorna a lista de jsons de entregas
     getAllEntregas():Promise<any>{
@@ -23,6 +23,8 @@ export class ServerCommunication {
             })
     }
 
+
+
     addEntrega(entrega:Entrega):Promise<any>{
         let postData =  new FormData();
         postData.append('cliente', entrega.cliente);
@@ -31,7 +33,7 @@ export class ServerCommunication {
         if(!(entrega.data_entrega == undefined || entrega.data_entrega == null || entrega.data_entrega=="")){
             postData.append('data_entrega', entrega.data_entrega);
         }
-        return fetch(this.prefix+'api/entregas',{
+        return fetch(this.prefix+'/api/entregas',{
             method:'post',
             body:postData})
             .then(function (response) {

@@ -1,13 +1,16 @@
 import {Entrega} from "../model/Entrega";
+import {RouteStep} from "../model/RouteStep";
 
 export class Entregas {
     static instance: Entregas = null;
     entregas : Entrega[] = [];
+    currentRoute : RouteStep[];
     selectedEntrega : Entrega;
 
 
     private constructor(){
         this.selectedEntrega = null;
+        this.currentRoute = null;
     }
 
     static setCurrentEntrega(e:Entrega){
@@ -34,4 +37,7 @@ export class Entregas {
         this.instance.entregas.push(entrega);
     }
 
+    static setCurrentRoute(param:RouteStep[]) {
+        this.instance.currentRoute = param;
+    }
 }

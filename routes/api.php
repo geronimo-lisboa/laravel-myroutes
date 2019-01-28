@@ -17,6 +17,7 @@ Route::get('entregas', 'EntregaController@index');
 Route::get('entregas/{id}', 'EntregaController@show');
 Route::post('entregas', 'EntregaController@store');
 Route::put('entregas/{id}', 'EntregaController@update');
+Route::put('entregas/{id}/entregue', 'EntregaController@setDataEntregaToNow');
 
 Route::get('testeRoutes', 'TesteRouteApiController@helloRouteApi');
 

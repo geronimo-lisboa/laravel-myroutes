@@ -2,9 +2,11 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
+
         <div class="modal-title">
-          Entrega
+            <button class="btn btn-danger" data-dismiss="modal">X</button>
         </div>
+
       </div>
       <div class="modal-body">
         <div>
@@ -24,15 +26,12 @@
           <span *ngIf="entrega!=null">{{entrega.data_entrega}}</span>
         </div>
         <div>
-          <button class="btn btn-primary" (click)="onCalcularRotaClick()">Calcular Rota</button>
+          <button class="btn btn-primary" *ngIf="entregaVM.currentRoute == null" (click)="onCalcularRotaClick()">Calcular Rota</button>
         </div>
-        <div>
-          <button class="btn btn-success">Entregue!</button>
-        </div>
-        <app-route-steps *ngIf="stepList != null" [steps]="stepList"></app-route-steps>
+        <app-route-steps *ngIf="entregaVM.currentRoute != null" [steps]="entregaVM.currentRoute"></app-route-steps>
       </div>
       <div class="modal-footer">
-
+        <button class="btn btn-success" data-dismiss="modal">Entregar</button>
       </div>
     </div>
   </div>

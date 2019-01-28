@@ -46,6 +46,11 @@ class EntregaController extends Controller
             throw new NotEnoughParametersException();
         }
     }
+
+    public function setDataEntregaToNow($id)
+    {
+        error_log("foobar");
+    }
     /*
      * Atualiza uma entrega.
      * */

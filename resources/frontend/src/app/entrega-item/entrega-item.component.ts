@@ -29,6 +29,7 @@ export class EntregaItemComponent implements OnInit {
   }
 
   onEntregaDetalheClick() {
+    Entregas.setCurrentRoute(null);
     Entregas.setCurrentEntrega(this.entrega);
   }
 }
