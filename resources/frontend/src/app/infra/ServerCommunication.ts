@@ -1,10 +1,10 @@
 import {Entrega} from "../model/Entrega";
-import {post} from "selenium-webdriver/http";
+import { environment } from '../../environments/environment';
 
 export class ServerCommunication {
     prefix:string;
     constructor(){
-        this.prefix = '';//'http://localhost:8000';
+        this.prefix = environment.baseUrl;
     }
     ///Retorna a lista de jsons de entregas
     getAllEntregas():Promise<any>{
