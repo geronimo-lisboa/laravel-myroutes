@@ -15,9 +15,11 @@ export class AppComponent {
   serverInterface:ServerCommunication;
   title = 'MyRouter';
   entregas = Entregas.getInstance();
+  viewModel : ViewModelService;
 
-  constructor(serverInterface : ServerCommunication) {
+  constructor(serverInterface : ServerCommunication, vm:ViewModelService) {
       this.serverInterface = serverInterface;
+      this.viewModel = vm;
   }
 
   ngOnInit() {

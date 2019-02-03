@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {ViewModelService} from "../view-model.service";
 
 @Component({
   selector: 'app-lista-entrega',
@@ -7,8 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ListaEntregaComponent implements OnInit {
   @Input() entregas: string[];
-  constructor() {
+  viewModel:ViewModelService;
+  constructor(vm:ViewModelService) {
     this.entregas = [];
+    this.viewModel = vm;
   }
 
   ngOnInit() {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ViewModelService} from "../view-model.service";
 
 @Component({
   selector: 'app-lista-entrega-header',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lista-entrega-header.component.css']
 })
 export class ListaEntregaHeaderComponent implements OnInit {
-
-  constructor() { }
+  viewModel:ViewModelService;
+  constructor(vm:ViewModelService) {
+    this.viewModel = vm;
+  }
 
   ngOnInit() {
   }

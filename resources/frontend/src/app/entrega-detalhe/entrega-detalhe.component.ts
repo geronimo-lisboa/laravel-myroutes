@@ -3,6 +3,7 @@ import {Entrega} from "../../model/Entrega";
 import {RouteStep} from "../../model/RouteStep";
 import {ServerCommunication} from "../../infra/ServerCommunication";
 import {Entregas} from "../viewModel/Entregas";
+import {ViewModelService} from "../view-model.service";
 
 
 @Component({
@@ -13,10 +14,13 @@ import {Entregas} from "../viewModel/Entregas";
 export class EntregaDetalheComponent implements OnInit {
   server:ServerCommunication;
   entregaVM:Entregas;
+  viewModel : ViewModelService;
   @Input() entrega:Entrega;
-  constructor(serverCommunication:ServerCommunication) {
+
+  constructor(serverCommunication:ServerCommunication, vm:ViewModelService) {
     this.server = serverCommunication;
     this.entregaVM = Entregas.getInstance();
+    this.viewModel = vm;
   }
 
   ngOnInit() {

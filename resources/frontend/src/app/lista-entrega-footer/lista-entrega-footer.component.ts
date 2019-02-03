@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ServerCommunication} from "../../infra/ServerCommunication";
+import {ViewModelService} from "../view-model.service";
 
 @Component({
   selector: 'app-lista-entrega-footer',
@@ -8,8 +9,10 @@ import {ServerCommunication} from "../../infra/ServerCommunication";
 })
 export class ListaEntregaFooterComponent implements OnInit {
   testeComm:ServerCommunication;
-  constructor() {
+  viewModel : ViewModelService;
+  constructor(vm:ViewModelService) {
     this.testeComm = new ServerCommunication();
+    this.viewModel = vm;
   }
 
   ngOnInit() {
