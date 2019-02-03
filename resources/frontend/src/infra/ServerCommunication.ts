@@ -1,10 +1,12 @@
 import {Entrega} from "../model/Entrega";
 import { environment } from '../environments/environment';
-
+import {Injectable} from "@angular/core";
+@Injectable()
 export class ServerCommunication {
     prefix:string;
     constructor(){
         this.prefix = environment.baseUrl;
+        console.log("Criando o ServerCommunication, root = "+this.prefix);
     }
     ///Retorna a lista de jsons de entregas
     getAllEntregas():Promise<any>{

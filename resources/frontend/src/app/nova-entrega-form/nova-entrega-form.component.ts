@@ -14,8 +14,8 @@ export class NovaEntregaFormComponent implements OnInit {
   strDestino:string;
   strData: string;
   serverInterface:ServerCommunication;
-  constructor() {
-    this.serverInterface = new ServerCommunication();
+  constructor(serverInterface:ServerCommunication) {
+    this.serverInterface = serverInterface;
   }
 
   ngOnInit() {

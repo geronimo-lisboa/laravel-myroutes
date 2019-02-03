@@ -14,8 +14,8 @@ export class EntregaDetalheComponent implements OnInit {
   server:ServerCommunication;
   entregaVM:Entregas;
   @Input() entrega:Entrega;
-  constructor() {
-    this.server = new ServerCommunication();
+  constructor(serverCommunication:ServerCommunication) {
+    this.server = serverCommunication;
     this.entregaVM = Entregas.getInstance();
   }
 
