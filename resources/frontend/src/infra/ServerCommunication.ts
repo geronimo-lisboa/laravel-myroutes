@@ -1,4 +1,4 @@
-import {Entrega} from "../app/model/Entrega";
+import {Entrega} from "../model/Entrega";
 import { environment } from '../environments/environment';
 
 export class ServerCommunication {

@@ -1,5 +1,5 @@
-import {Entrega} from "../model/Entrega";
-import {RouteStep} from "../model/RouteStep";
+import {Entrega} from "../../model/Entrega";
+import {RouteStep} from "../../model/RouteStep";
 
 export class Entregas {
     static instance: Entregas = null;

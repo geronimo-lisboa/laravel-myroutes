@@ -1,6 +1,6 @@
 import { Component, OnInit , Input} from '@angular/core';
-import {Entrega} from "../model/Entrega";
-import {RouteStep} from "../model/RouteStep";
+import {Entrega} from "../../model/Entrega";
+import {RouteStep} from "../../model/RouteStep";
 import {ServerCommunication} from "../../infra/ServerCommunication";
 import {Entregas} from "../viewModel/Entregas";
 

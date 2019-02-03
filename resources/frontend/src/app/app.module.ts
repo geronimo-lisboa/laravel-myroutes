@@ -11,6 +11,7 @@ import { NovaEntregaFormComponent } from './nova-entrega-form/nova-entrega-form.
 import { EntregaDetalheComponent } from './entrega-detalhe/entrega-detalhe.component';
 import { RouteStepItemComponent } from './route-step-item/route-step-item.component';
 import { RouteStepsComponent } from './route-steps/route-steps.component';
+import { ServerCommunication} from "../infra/ServerCommunication";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { RouteStepsComponent } from './route-steps/route-steps.component';
   imports: [
     BrowserModule,FormsModule, ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ServerCommunication],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

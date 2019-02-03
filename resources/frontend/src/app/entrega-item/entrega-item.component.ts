@@ -1,5 +1,5 @@
 import { Component, OnInit , Input} from '@angular/core';
-import {Entrega} from "../model/Entrega";
+import {Entrega} from "../../model/Entrega";
 import {Entregas} from "../viewModel/Entregas";
 
 @Component({
