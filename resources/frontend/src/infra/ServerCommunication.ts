@@ -1,5 +1,5 @@
-import {Entrega} from "../model/Entrega";
-import { environment } from '../../environments/environment';
+import {Entrega} from "../app/model/Entrega";
+import { environment } from '../environments/environment';
 
 export class ServerCommunication {
     prefix:string;

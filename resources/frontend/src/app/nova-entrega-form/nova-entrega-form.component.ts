@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Entrega} from "../model/Entrega";
-import {ServerCommunication} from "../infra/ServerCommunication";
+import {ServerCommunication} from "../../infra/ServerCommunication";
 import {Entregas} from "../viewModel/Entregas";
 
 @Component({

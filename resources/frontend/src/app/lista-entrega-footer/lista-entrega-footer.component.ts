@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ServerCommunication} from "../infra/ServerCommunication";
+import {ServerCommunication} from "../../infra/ServerCommunication";
 
 @Component({
   selector: 'app-lista-entrega-footer',
