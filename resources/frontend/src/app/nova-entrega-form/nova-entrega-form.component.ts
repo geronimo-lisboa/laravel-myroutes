@@ -14,10 +14,11 @@ export class NovaEntregaFormComponent implements OnInit {
   strOrigem:string;
   strDestino:string;
   strData: string;
-  serverInterface:ServerCommunication;
+  //serverInterface:ServerCommunication;
   viewService : ViewModelService;
-  constructor(serverInterface:ServerCommunication, vm:ViewModelService) {
-    this.serverInterface = serverInterface;
+
+  constructor(vm:ViewModelService) {
+    //this.serverInterface = serverInterface;
     this.viewService = vm;
   }
 
@@ -28,11 +29,14 @@ export class NovaEntregaFormComponent implements OnInit {
   onNewEntregaClick() {
     let entrega:Entrega = new Entrega(this.strCliente, this.strOrigem, this.strDestino, this.strData);
     if(entrega.isValid()){
-      this.serverInterface.addEntrega(entrega)
-          .then(json=>{
-            Entregas.addCreatedEntrega(entrega);
-          });
+      this.viewService.createNewEntrega(entrega);
     }
+    // if(entrega.isValid()){
+    //   this.serverInterface.addEntrega(entrega)
+    //       .then(json=>{
+    //         Entregas.addCreatedEntrega(entrega);
+    //       });
+    // }
   }
 
   onNewEntregaClientEdit(event:any) {

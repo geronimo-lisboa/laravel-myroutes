@@ -63,4 +63,13 @@ export class ViewModelService {
     // Entregas.setCurrentEntrega(this.entrega);
 
   }
+
+  createNewEntrega(entrega: Entrega) {
+      this.serverInterface.addEntrega(entrega)
+        .then(json=>{
+            Entregas.addCreatedEntrega(entrega);
+            this.entregas.push(entrega);
+
+        });
+  }
 }
