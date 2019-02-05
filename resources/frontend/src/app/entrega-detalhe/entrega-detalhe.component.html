@@ -26,9 +26,9 @@
           <span *ngIf="entrega!=null">{{entrega.data_entrega}}</span>
         </div>
         <div>
-          <button class="btn btn-primary" *ngIf="entregaVM.currentRoute == null" (click)="onCalcularRotaClick()">Calcular Rota</button>
+          <button class="btn btn-primary" *ngIf="viewModel.currentRoute == null" (click)="onCalcularRotaClick()">Calcular Rota</button>
         </div>
-        <app-route-steps *ngIf="entregaVM.currentRoute != null" [steps]="entregaVM.currentRoute"></app-route-steps>
+        <app-route-steps *ngIf="viewModel.currentRoute != null" [steps]="viewModel.currentRoute"></app-route-steps>
       </div>
       <div class="modal-footer">
         <button class="btn btn-success" data-dismiss="modal">Entregar</button>

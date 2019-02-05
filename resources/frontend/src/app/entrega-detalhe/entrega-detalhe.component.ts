@@ -12,14 +12,14 @@ import {ViewModelService} from "../view-model.service";
   styleUrls: ['./entrega-detalhe.component.css']
 })
 export class EntregaDetalheComponent implements OnInit {
-  server:ServerCommunication;
-  entregaVM:Entregas;
+  //server:ServerCommunication;
+  //entregaVM:Entregas;
   viewModel : ViewModelService;
   @Input() entrega:Entrega;
 
-  constructor(serverCommunication:ServerCommunication, vm:ViewModelService) {
-    this.server = serverCommunication;
-    this.entregaVM = Entregas.getInstance();
+  constructor(vm:ViewModelService) {
+    //this.server = serverCommunication;
+    //this.entregaVM = Entregas.getInstance();
     this.viewModel = vm;
   }
 
@@ -27,13 +27,14 @@ export class EntregaDetalheComponent implements OnInit {
   }
 
   onCalcularRotaClick() {
-    this.server.getRoute(this.entrega)
-        .then(jsonData=>{
-          let jsonStepsList = jsonData.routes[0].legs[0].steps;
-          let steps = jsonStepsList.map(
-              (json)=>new RouteStep(json.html_instructions, json.distance, json.duration)
-          );
-          Entregas.setCurrentRoute(steps);
-        });
+      this.viewModel.createRoute(this.entrega);
+    // this.server.getRoute(this.entrega)
+    //     .then(jsonData=>{
+    //       let jsonStepsList = jsonData.routes[0].legs[0].steps;
+    //       let steps = jsonStepsList.map(
+    //           (json)=>new RouteStep(json.html_instructions, json.distance, json.duration)
+    //       );
+    //       Entregas.setCurrentRoute(steps);
+    //     });
   }
 }

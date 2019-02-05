@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="61095185-a354-44ec-b312-010cdb21c0fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/entrega-detalhe/entrega-detalhe.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/entrega-detalhe/entrega-detalhe.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/entrega-detalhe/entrega-detalhe.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/entrega-detalhe/entrega-detalhe.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/entrega-item/entrega-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/entrega-item/entrega-item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-footer/lista-entrega-footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-footer/lista-entrega-footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-footer/lista-entrega-footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-footer/lista-entrega-footer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega/lista-entrega.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega/lista-entrega.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega/lista-entrega.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega/lista-entrega.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/frontend/src/app/view-model.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resources/frontend/src/app/view-model.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,12 +27,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/app.component.ts">
+        <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/entrega-item/entrega-item.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+            <state relative-caret-position="545">
+              <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#0#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/view-model.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="477">
+              <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,19 +54,7 @@
         <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/view-model.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
+              <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -89,7 +95,6 @@
         <option value="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-footer/lista-entrega-footer.component.css" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-header/lista-entrega-header.component.css" />
         <option value="$PROJECT_DIR$/config/database.php" />
-        <option value="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-footer/lista-entrega-footer.component.html" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TesteRouteApiController.php" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/entrega-item/entrega-item.component.css" />
@@ -99,7 +104,6 @@
         <option value="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-header/lista-entrega-header.component.html" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/nova-entrega-form/nova-entrega-form.component.css" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/entrega-item/entrega-item.component.html" />
-        <option value="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega/lista-entrega.component.html" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/route-steps/route-steps.component.html" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/route-step-item/route-step-item.component.html" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/nova-entrega-form/nova-entrega-form.component.html" />
@@ -107,7 +111,6 @@
         <option value="$PROJECT_DIR$/resources/frontend/src/app/model/RouteStep.ts" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/viewModel/Entregas.ts" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/entrega-detalhe/entrega-detalhe.component.css" />
-        <option value="$PROJECT_DIR$/resources/frontend/src/app/entrega-detalhe/entrega-detalhe.component.html" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EntregaController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/resources/frontend/src/environments/environment.ts" />
@@ -121,11 +124,14 @@
         <option value="$PROJECT_DIR$/resources/frontend/src/app/route-step-item/route-step-item.component.ts" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/nova-entrega-form/nova-entrega-form.component.ts" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-header/lista-entrega-header.component.ts" />
-        <option value="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-footer/lista-entrega-footer.component.ts" />
-        <option value="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega/lista-entrega.component.ts" />
-        <option value="$PROJECT_DIR$/resources/frontend/src/app/entrega-item/entrega-item.component.ts" />
-        <option value="$PROJECT_DIR$/resources/frontend/src/app/entrega-detalhe/entrega-detalhe.component.ts" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega/lista-entrega.component.ts" />
+        <option value="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega/lista-entrega.component.html" />
+        <option value="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-footer/lista-entrega-footer.component.html" />
+        <option value="$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-footer/lista-entrega-footer.component.ts" />
+        <option value="$PROJECT_DIR$/resources/frontend/src/app/entrega-detalhe/entrega-detalhe.component.ts" />
+        <option value="$PROJECT_DIR$/resources/frontend/src/app/entrega-detalhe/entrega-detalhe.component.html" />
+        <option value="$PROJECT_DIR$/resources/frontend/src/app/entrega-item/entrega-item.component.ts" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/view-model.service.ts" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/app.component.html" />
       </list>
@@ -346,78 +352,6 @@
             <path>
               <item name="myRouter" type="b2602c69:ProjectViewProjectNode" />
               <item name="myRouter" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="hello-world" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myRouter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myRouter" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="lista-entrega" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myRouter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myRouter" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="lista-entrega-footer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myRouter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myRouter" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="lista-entrega-header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myRouter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myRouter" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="nova-entrega-form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myRouter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myRouter" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="route-step-item" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myRouter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myRouter" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="route-steps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myRouter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myRouter" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="viewModel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myRouter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myRouter" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -503,12 +437,12 @@
       <workItem from="1548180357588" duration="28493000" />
       <workItem from="1548784344510" duration="2234000" />
       <workItem from="1549037651415" duration="878000" />
-      <workItem from="1549220265614" duration="6695000" />
+      <workItem from="1549220265614" duration="7848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88961000" />
+    <option name="totallyTimeSpent" value="90114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1616" height="876" extended-state="6" />
@@ -564,20 +498,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TesteRouteApiController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -592,13 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-header/lista-entrega-header.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
         </state>
       </provider>
     </entry>
@@ -625,13 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="88" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/lista-entrega/lista-entrega.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -683,13 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/entrega-detalhe/entrega-detalhe.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -860,56 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-header/lista-entrega-header.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-footer/lista-entrega-footer.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/lista-entrega/lista-entrega.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/entrega-item/entrega-item.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/entrega-detalhe/entrega-detalhe.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -920,10 +769,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-header/lista-entrega-header.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-header/lista-entrega-header.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-header/lista-entrega-header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-footer/lista-entrega-footer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/lista-entrega-footer/lista-entrega-footer.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/lista-entrega/lista-entrega.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/lista-entrega/lista-entrega.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/entrega-detalhe/entrega-detalhe.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="82" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/entrega-detalhe/entrega-detalhe.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/entrega-item/entrega-item.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/view-model.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        <state relative-caret-position="477">
+          <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
@@ -933,7 +869,7 @@
     <entry file="file://$PROJECT_DIR$/resources/frontend/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
         </state>
       </provider>
     </entry>
