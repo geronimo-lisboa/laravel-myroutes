@@ -59,6 +59,10 @@ class Handler extends ExceptionHandler
                 'error'=>'Tem que informar origem, destino e cliente'
             ], 400);
         }
+        if($exception instanceof ErrorCalculatingRouteException)
+        {
+            return response()->json(['error'=>$exception->getMessage()], 500);
+        }
         return parent::render($request, $exception);
     }
 }
