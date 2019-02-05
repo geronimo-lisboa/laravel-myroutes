@@ -14,7 +14,7 @@ export class AppComponent {
   //O objeto de comunicação com o servidor.
   serverInterface:ServerCommunication;
   title = 'MyRouter';
-  entregas = Entregas.getInstance();
+  //entregas = Entregas.getInstance();
   viewModel : ViewModelService;
 
   constructor(serverInterface : ServerCommunication, vm:ViewModelService) {
@@ -23,31 +23,33 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    //Pega a lista de entregas
-    this.serverInterface.getAllEntregas()
-        .then( listaDeJsonDeEntregas => {
-          let listOfEntregas = listaDeJsonDeEntregas.map(curr=>{
-            return new Entrega(curr.cliente, curr.origem, curr.destino, curr.data_entrega);
-          });
-          Entregas.setEntregas(listOfEntregas);
-          //this.entregas = listOfEntregas;
-        });
+      this.viewModel.getAllEntregas();
+      this.viewModel.beginPollingForUpdates();
+    // //Pega a lista de entregas
+    // this.serverInterface.getAllEntregas()
+    //     .then( listaDeJsonDeEntregas => {
+    //       let listOfEntregas = listaDeJsonDeEntregas.map(curr=>{
+    //         return new Entrega(curr.cliente, curr.origem, curr.destino, curr.data_entrega);
+    //       });
+    //       Entregas.setEntregas(listOfEntregas);
+    //       //this.entregas = listOfEntregas;
+    //     });
 
     //depois da 1a invocação é uma boa consultar ocasionalmente pra ver se a lista está atualizada.
-    setInterval(()=>{this.updateData();}, 5000);
+//    setInterval(()=>{this.updateData();}, 5000);
 
   }
 
   updateData(){
-      this.serverInterface.getAllEntregas()
-          .then( listaDeJsonDeEntregas =>
-          {
-              let listOfEntregas = listaDeJsonDeEntregas.map(curr=>{
-                  return new Entrega(curr.cliente, curr.origem, curr.destino, curr.data_entrega);
-              });
-              Entregas.setEntregas(listOfEntregas);
-              //this.entregas = listOfEntregas;
-          });
+      // this.serverInterface.getAllEntregas()
+      //     .then( listaDeJsonDeEntregas =>
+      //     {
+      //         let listOfEntregas = listaDeJsonDeEntregas.map(curr=>{
+      //             return new Entrega(curr.cliente, curr.origem, curr.destino, curr.data_entrega);
+      //         });
+      //         Entregas.setEntregas(listOfEntregas);
+      //         //this.entregas = listOfEntregas;
+      //     });
   }
 
 
