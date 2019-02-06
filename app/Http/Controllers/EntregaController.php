@@ -18,7 +18,6 @@ class EntregaController extends Controller
     {
         $service = new EntregaService();
         return $service->findAll();
-        //return Entrega::all();
     }
     /*
      * Retorna por id.
@@ -27,8 +26,6 @@ class EntregaController extends Controller
     {
         $service = new EntregaService();
         return $service->findById($id);
-
-        //return Entrega::findOrFail($id);
     }
     /*
      * Cria uma nova entrega.
@@ -43,13 +40,6 @@ class EntregaController extends Controller
             $data_entrega = $request->request->get('data_entrega');
 
             return $service->create($cliente, $origem, $destino, $data_entrega);
-
-//            return Entrega::create([
-//                'cliente'=>$cliente,
-//                'origem'=>$origem,
-//                'destino'=>$destino,
-//                'data_entrega'=>$data_entrega,
-//            ]);
         }
         catch (QueryException $exception)
         {
@@ -74,16 +64,6 @@ class EntregaController extends Controller
             $destino = $request->request->get('destino');
             $data_entrega = $request->request->get('data_entrega');
             return $service->update($id, $cliente, $origem, $destino, $data_entrega);
-
-//            $entrega = Entrega::findOrFail($id);
-//            $entrega->cliente = $cliente;
-//            $entrega->origem = $origem;
-//            $entrega->destino = $destino;
-//            $entrega->data_entrega = $data_entrega;
-//            $entrega->update();
-//
-//            // var_dump($entrega);
-//            return $entrega;
 
         }
         catch (QueryException $exception)
