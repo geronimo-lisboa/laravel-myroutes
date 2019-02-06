@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61095185-a354-44ec-b312-010cdb21c0fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/ErrorCalculatingRouteException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/EntregaService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/RouteService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RotaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RotaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EntregaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EntregaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/EntregaService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/EntregaService.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,27 +17,34 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/app/Services/EntregaService.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="697">
+                    <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Services/RouteService.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EntregaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="131" selection-start-line="20" selection-start-column="131" selection-end-line="20" selection-end-column="131" />
+            <state relative-caret-position="587">
+              <caret line="86" lean-forward="true" selection-start-line="77" selection-end-line="86" />
               <folding>
-                <element signature="e#113#135#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RotaController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#40#70#0#PHP" expanded="true" />
+                <element signature="e#40#88#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,7 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Middleware/Cors.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_01_21_002057_create_entregas_table.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/NotEnoughParametersException.php" />
@@ -95,7 +97,6 @@
         <option value="$PROJECT_DIR$/resources/frontend/src/app/model/RouteStep.ts" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/viewModel/Entregas.ts" />
         <option value="$PROJECT_DIR$/resources/frontend/src/app/entrega-detalhe/entrega-detalhe.component.css" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/EntregaController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/resources/frontend/src/environments/environment.ts" />
         <option value="$PROJECT_DIR$/resources/frontend/src/environments/environment.prod.ts" />
@@ -122,6 +123,8 @@
         <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RotaController.php" />
         <option value="$PROJECT_DIR$/app/Services/RouteService.php" />
+        <option value="$PROJECT_DIR$/app/Services/EntregaService.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/EntregaController.php" />
       </list>
     </option>
   </component>
@@ -267,6 +270,12 @@
             <path>
               <item name="myRouter" type="b2602c69:ProjectViewProjectNode" />
               <item name="myRouter" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myRouter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myRouter" type="462c0819:PsiDirectoryNode" />
               <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -392,12 +401,12 @@
       <workItem from="1548180357588" duration="28493000" />
       <workItem from="1548784344510" duration="2234000" />
       <workItem from="1549037651415" duration="878000" />
-      <workItem from="1549220265614" duration="10329000" />
+      <workItem from="1549220265614" duration="11439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92595000" />
+    <option name="totallyTimeSpent" value="93705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -534,16 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="51" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EntregaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
-          <folding>
-            <element signature="e#40#88#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -796,9 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Services/EntregaService.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Exceptions/ErrorCalculatingRouteException.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -829,6 +825,23 @@
           <caret line="20" column="131" selection-start-line="20" selection-start-column="131" selection-end-line="20" selection-end-column="131" />
           <folding>
             <element signature="e#113#135#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Services/EntregaService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EntregaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="86" lean-forward="true" selection-start-line="77" selection-end-line="86" />
+          <folding>
+            <element signature="e#40#88#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
